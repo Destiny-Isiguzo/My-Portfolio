@@ -27,4 +27,4 @@ Welcome to the README for Destiny Isiguzo's portfolio. This portfolio showcases 
 
 ## Contact
 
-To get in touch with me, use the contact form in the portfolio or send an [Email](markdestiny673@gmail.com). You can also find me on [LinkedIn](https://www.linkedin.com/in/destiny-isiguzo), and [Telegram](https://t.me/D_ni_si).
+To get in touch with me, use the contact form in the portfolio. You can also find me on [LinkedIn](https://www.linkedin.com/in/destiny-isiguzo), and [Telegram](https://t.me/D_ni_si).
