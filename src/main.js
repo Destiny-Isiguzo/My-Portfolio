@@ -1,28 +1,36 @@
 // LOADER ANIMATION
-const loaderWrapper = document.getElementById('loader-wrapper');
-const loader = document.getElementById('loader');
+document.addEventListener('DOMContentLoaded', () => {
+	const loaderWrapper = document.getElementById('loader-wrapper');
+	const loader = document.getElementById('loader');
 
-// timeout to end loader animation after 1 second (in ms)
-setTimeout(() => {
-	loaderWrapper.classList.add('loaded');
-	loader.classList.add('loaded');
-}, 1300);
+	// timeout to end loader animation after 1 second (in ms)
+	setTimeout(() => {
+		loaderWrapper.classList.add('loaded');
+		loader.classList.add('loaded');
+	}, 1300);
 
-// window.addEventListener('DOMContentLoaded', () => {
-// 	loaderWrapper.classList.add('loaded');
-//    loader.classList.add('loaded');
-// })
-
-loaderWrapper.addEventListener('transitionend', () => {
-	loaderWrapper.parentNode.removeChild(loaderWrapper);
-});
+	loaderWrapper.addEventListener('transitionend', () => {
+		loaderWrapper.parentNode.removeChild(loaderWrapper);
+	});
+})
 
 
+document.addEventListener('DOMContentLoaded', () => {
+	const header = document.querySelector('header');
+	const main = document.querySelector('main');
+
+	setTimeout(() => {
+		header.style.opacity = '1';
+		main.style.opacity = '1';
+	}, 250);
+})
 
 
 
 
-// // COLOR THEME TOGGLE
+
+
+// COLOR THEME TOGGLE
 
 // Check local storage for saved theme
 const currentTheme = localStorage.getItem('theme');
@@ -56,14 +64,10 @@ function toggleIcon(theme) {
 
 	if (theme === 'dark-theme') {
 		icon.innerText = icon.innerText.replace('dark_mode', 'light_mode');
-		icon.classList.toggle('themeBtnSwitch');
 		mobileIcon.innerText = mobileIcon.innerText.replace('dark_mode', 'light_mode');
-		// mobileIcon.classList.toggle('mobileThemeBtnSwitch');
 	} else {
 		icon.innerText = icon.innerText.replace('light_mode', 'dark_mode');
-		icon.classList.toggle('themeBtnSwitch');
 		mobileIcon.innerText = mobileIcon.innerText.replace('light_mode', 'dark_mode');
-		// mobileIcon.classList.toggle('mobileThemeBtnSwitch');
 	}
 }
 

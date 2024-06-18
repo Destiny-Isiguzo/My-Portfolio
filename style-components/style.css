@@ -144,4 +144,22 @@ body {
 
 main {
 	margin-inline: var(--spacing-global-margin-inline);
+	opacity: 0;
+	transition: var(--global-transition);
+}
+
+header {
+	opacity: 0;
+	transition: var(--global-transition);
+}
+
+::-webkit-scrollbar {
+	background-color: var(--color-basic-light-gray);
+	border-radius: .2rem;
+	width: 11px;
+}
+
+::-webkit-scrollbar-thumb {
+	background-color: var(--color-basic-dark-gray);
+	border-radius: .2rem;
 }

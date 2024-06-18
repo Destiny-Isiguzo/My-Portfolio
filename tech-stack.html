@@ -5,11 +5,8 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<meta
 			name="description"
-			content="Explore the portfolio of Destiny Isiguzo, a skilled frontend developer. Learn about his experience in web development, his background, and get in touch for potential collaborations." />
-		<meta
-			name="keywords"
-			content="Frontend Developer, Portfolio, Destiny Isiguzo, frontend, Altschool Graduate" />
-		<meta name="author" content="Destiny Isiguzo" />
+			content="Explore the portfolio of Destiny Isiguzo, a skilled frontend developer. Learn about his experience in web development, his background, and get in touch for potential collaborations." 
+		/>
 
 		<!-- FAVICONS -->
 		<link
@@ -55,9 +52,16 @@
 		<title>Tech Stack &#8212; Destiny Isiguzo &#8901; FrontEnd Developer</title>
 	</head>
 	<body>
+		<div class="loader-wrapper" id="loader-wrapper">
+			<div class="loader" id="loader"></div>
+			<div class="loader-section section-left"></div>
+			<div class="loader-section section-right"></div>
+		</div>
+		<!-- END OF LOADING ANIMATION -->
+		 
 		<header>
-			<nav class="desktop-nav-container">
-				<div class="desktop-nav-container-left">
+			<nav class="desktop-nav-container" role="navigation">
+				<div class="desktop-nav-container-left" role="menu">
 					<a href="index.html" class="logo-container" aria-labelledby="Logo" title="Logo">
 						<h1 class="desktop-logo">
 							D.
@@ -65,28 +69,19 @@
 					</a>
 
 					<div class="desktop-nav-menu-container" role="menu">
-						<!-- <a href="index.html" class="desktop-nav-menu-link desktop-nav-menu-link1" id="desktop-nav-menu-btn" role="menuitem">
-                     <p class="desktop-nav-menu-btn-num">01.</p>
-							Home
-                  </a> -->
-
                   <a href="about.html" class="desktop-nav-menu-link desktop-nav-menu-link2" id="desktop-nav-menu-btn" role="menuitem">
-                     <!-- <p class="desktop-nav-menu-btn-num">01.</p> -->
 							About
                   </a>
 
                   <a href="projects.html" class="desktop-nav-menu-link desktop-nav-menu-link3" id="desktop-nav-menu-btn" role="menuitem">
-                     <!-- <p class="desktop-nav-menu-btn-num">02.</p> -->
 							Projects
                   </a>
 
                   <a href="tech-stack.html" class="desktop-nav-menu-link desktop-nav-menu-link4" id="desktop-nav-menu-btn" role="menuitem">
-                     <!-- <p class="desktop-nav-menu-btn-num">03.</p> -->
 							Tech Stack
                   </a>
 
                   <a href="contact.html" class="desktop-nav-menu-link desktop-nav-menu-link5" id="desktop-nav-menu-btn" role="menuitem">
-                     <!-- <p class="desktop-nav-menu-btn-num">04.</p> -->
 							Contact
                   </a>
 					</div>
@@ -102,20 +97,18 @@
 						<i class="fa-brands fa-github" aria-labelledby="GitHub icon"></i>
 					</a>
                <div class="desktop-nav-divider"></div>
-               <div class="theme-toggle-btn-container">
-						<span 
-				      	class="material-symbols-outlined theme-toggle-btn" 
-							id="theme-toggle-btn"
-							title="Theme toggle"
-							aria-labelledby="Theme toggle">
-				      	dark_mode
-			      	</span>
-					</div>
+               <span 
+				      class="material-symbols-outlined theme-toggle-btn" 
+						id="theme-toggle-btn"
+						title="Theme toggle"
+						aria-labelledby="Theme toggle">
+				      dark_mode
+			      </span>
             </div>
 			</nav>
 			<!-- END OF DESKTOP NAV -->
 
-			<nav class="mobile-nav-container">
+			<nav class="mobile-nav-container" role="navigation">
 				<a href="index.html" aria-labelledby="Logo" title="Logo">
 					<h1 class="mobile-logo">
 						D.
@@ -152,18 +145,6 @@
 						</span>
 						<p>Theme</p>
 					</div>
-
-					<!-- <div class="mobile-nav-social-icons-container">
-						<a href="" target="_blank">
-							<i class="fa-brands fa-linkedin" title="Linkedin profile" aria-labelledby="Linkedin icon"></i>
-						</a>
-               	<a href="" target="_blank">
-							<i class="fa-brands fa-instagram" title="Instagram profile" aria-labelledby="Instagram icon"></i>
-						</a>
-               	<a href="" target="_blank">
-							<i class="fa-brands fa-github" title="GitHub profile" aria-labelledby="GitHub icon"></i>
-						</a>
-					</div> -->
 				</div>
 			</nav>
 			<!-- END OF MOBILE NAV -->
@@ -171,13 +152,6 @@
 		<!-- END OF HEADER -->
 
 		<main>
-			<div class="loader-wrapper" id="loader-wrapper">
-				<div class="loader" id="loader"></div>
-				<div class="loader-section section-left"></div>
-				<div class="loader-section section-right"></div>
-			</div>
-			<!-- END OF LOADING ANIMATION -->
-
 			<section class="tech-stack-section">
 				<div class="tech-stack-heading-container">
 					<h2 class="tech-stack-title">Tech Stack</h2>
